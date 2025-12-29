@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Ticket, MapPin, Calendar, Music, Star, Zap, ShoppingBag, Utensils, PlayCircle, Clock, ExternalLink, Menu, X } from 'lucide-react';
+import { ArrowRight, Ticket, MapPin,  Music, Star, Zap, ShoppingBag, Utensils, PlayCircle, Menu, X } from 'lucide-react';
 
 /**
  * 🔗 遷移先リンク定数設定
@@ -155,7 +155,7 @@ const NijiFes2026LP = () => {
       {/* --- Mobile Menu Overlay --- */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-[#0f172a]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 animate-fade-in">
-          {Object.entries(EXTERNAL_LINKS).map(([key, url], idx) => (
+          {Object.entries(EXTERNAL_LINKS).map(([key, url],) => (
              <a key={key} href={url} target="_blank" rel="noreferrer" className="font-comic text-4xl text-white hover:text-[#FACC15] hover:scale-110 transition-all">
                {key}
              </a>
